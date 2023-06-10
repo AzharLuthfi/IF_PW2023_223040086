@@ -1,0 +1,125 @@
+:root {
+  --primary: rgb(253, 168, 56);
+  --bg: rgb(67, 53, 32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-image: url("../../landing_page/img/header-bg.jpg");
+  background-size: cover;
+}
+
+::selection {
+  background: none;
+  color: #fff;
+}
+
+.wrapper {
+  width: 400px;
+  height: 570px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+}
+
+.wrapper .title {
+  font-size: 50px;
+  font-weight: 1000;
+  text-align: center;
+  line-height: 100px;
+  color: var(--bg);
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background-color: var(--primary);
+  text-decoration: underline;
+}
+
+.wrapper form {
+  padding: 10px 30px 100px 30px;
+}
+
+.wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+}
+
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  margin-top: 5px;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+  border-color: #fff;
+}
+
+form .login {
+  color: #fff;
+  border: none;
+  padding: 10px 150px 10px 150px;
+  margin: 60px 10px 10px -2px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--primary);
+}
+
+form .sign_up {
+  color: #fff;
+  border: none;
+  padding: 10px 100px 10px 100px;
+  margin: 60px 25px 10px 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--primary);
+}
+form button {
+  transform: scale(0.95);
+}
+form button:hover {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+form .pass-link {
+  color: #292727;
+  margin-top: 50px;
+  position: center;
+}
+form .signup-link {
+  color: #022607;
+  margin-top: 10px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a {
+  color: #022607;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover {
+  text-decoration: underline;
+}
